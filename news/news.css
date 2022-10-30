@@ -271,33 +271,35 @@ header label:hover {
 
 
 
-.news_container {
+
+.news_container{
     background-color: transparent;
-    width: 55vw;
+    width: 800px;
     height: 500px;
+    left: 1vw;
     max-height: auto;
-    margin-top: 10vh;
-    margin-bottom: 30vh;
+    margin-top: 2vh;
+    margin-bottom: 500px;
     display: flex;
     flex-direction: column;
     position: relative;
-}
-
-
-
-
-.list_wrapper {
+    }
+  
+  
+  
+  
+  .list_wrapper{
     width: 100%;
     background-color: transparent;
-
-}
-
-
-
-
-
-
-.list_wrapper ul {
+  
+  }
+  
+  
+  
+  
+  
+  
+  .list_wrapper ul {
     width: 100%;
     height: 100%;
     min-width: 100%;
@@ -305,37 +307,68 @@ header label:hover {
     display: flex;
     flex-direction: row;
     align-items: center;
-
-}
-
-.list_wrapper li {
+    
+  }
+  
+  .list_wrapper li{
     align-items: center;
     text-indent: 2px;
     justify-content: space-evenly;
     margin: 10px;
+  
+  }
 
-}
 
-
-.background_news {
+  .list_wrapper2{
+    width: 100%;
+    background-color: transparent;
+  
+  }
+  
+  
+  
+  
+  
+  
+  .list_wrapper2 ul {
+    width: 100%;
+    height: 100%;
+    min-width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+  }
+  
+  .list_wrapper2 li{
+    align-items: center;
+    text-indent: 2px;
+    justify-content: space-evenly;
+    margin: 10px;
+  
+  }
+  
+  
+  .background_news{
     height: 280px;
     max-width: 100%;
     max-height: 100%;
     width: 100%;
     object-fit: cover;
     overflow: hidden;
-}
-
-
-.element_info {
+  }
+  
+  
+  .element_info{
     max-height: 250px;
     width: 100%;
     overflow: hidden;
     text-decoration: none;
     margin-top: -85px;
-}
-
-.element_info h2 {
+  }
+  
+  .element_info h2{
     width: 100%;
     height: 120px;
     justify-content: left;
@@ -344,43 +377,41 @@ header label:hover {
     overflow: hidden;
     text-overflow: ellipsis;
     color: white;
-    -webkit-mask: linear-gradient(to top, #0000 10%, #000);
-    mask: linear-gradient(to top, #0000 10%, #000);
-
-}
-
-.link_noticias {
+    -webkit-mask:linear-gradient(to top,#0000 10%,#000);
+    mask:linear-gradient(to top,#0000 10%, #000);
+  
+  }
+  
+  .link_noticias {
     color: white;
     text-decoration: none;
-}
-
-.link_noticias:hover {
+  }
+  
+  .link_noticias:hover{
     color: gray;
-}
-
-
-.element_info p {
+  }
+  
+  
+  .element_info p{
     height: 85px;
     overflow: hidden;
     text-overflow: ellipsis;
     color: lightgray;
-    -webkit-mask: linear-gradient(to top, #0000 10%, #000);
-    mask: linear-gradient(to top, #0000 10%, #000);
-}
-
-
-
-.element-link img {
+    -webkit-mask:linear-gradient(to top,#0000 10%,#000);
+    mask:linear-gradient(to top,#0000 10%, #000);
+  }
+  
+  
+  
+  .element-link img{
     display: block;
     object-fit: cover;
     height: 200px;
     width: 100%;
-}
+  }
 
-
-
-
-
+  
+  
 /* FOOTER */
 
 .footer-distributed{
@@ -449,10 +480,42 @@ header label:hover {
     cursor: pointer;
     margin: 5px;
   }
+
+
   
   
   
   
+  @media screen and (max-width: 960px) {
+    .news_container{
+        width: 80%;
+    }
+
+    @media screen and (max-width: 640px) {
+        .news_container{
+            scale: 80%;
+            left: -50px;
+        }
+    }
+
+        @media screen and (max-width: 550px) {
+            .news_container{
+                left: -50px;
+                width: 500px;
+                scale: 70%;
+            }
+        }
+
+            @media screen and (max-width: 480px) {
+                .news_container{
+                    left: -50px;
+                    width: 400px;
+                    scale: 70%;
+                }
+
+            }
+  
+}
   @media screen and (max-width: 480px) {
   
     .footer-distributed{
@@ -468,9 +531,7 @@ header label:hover {
       margin-bottom: 5px;
       text-align: center;
     }
-  
+
   }
-  
-  
   
   
