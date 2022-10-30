@@ -19,9 +19,10 @@ function Next (){
     }, 500)
  }
 
+
  function Prev (){
     let SliderSection = document.querySelectorAll(".slider_section");
-    let  SliderSectionLast = SliderSection[SliderSection.length-1];    
+    let  SliderSectionLast = SliderSection[SliderSection.length -1];    
     slider.style.marginleft = "0%";
     slider.style.transition = "all 0.5s";
     setTimeout (function(){
@@ -29,7 +30,7 @@ function Next (){
         slider.insertAdjacentElement("afterbegin", SliderSectionLast);
         slider.style.marginleft = "-100%";
 
-    }, 500)
+    }, 500);
  }
 
 btnright.addEventListener ("click", function(){
@@ -40,6 +41,10 @@ btnleft.addEventListener ("click", function(){
     Prev();
 });
 
+
+setInterval(function(){
+  Next();
+}, 5000);
 
 
 
